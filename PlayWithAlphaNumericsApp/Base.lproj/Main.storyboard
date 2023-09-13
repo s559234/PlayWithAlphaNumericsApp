@@ -45,7 +45,7 @@
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dj9-tv-Jvi">
                                                                 <rect key="frame" x="0.0" y="0.0" width="47" height="31"/>
                                                                 <connections>
-                                                                    <action selector="numberSWCH:" destination="BYZ-38-t0r" eventType="valueChanged" id="Z52-1G-QmM"/>
+                                                                    <action selector="numberSWCH:" destination="BYZ-38-t0r" eventType="valueChanged" id="Dp2-yj-h0z"/>
                                                                     <action selector="numberswitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="hVc-Zo-gnC"/>
                                                                 </connections>
                                                             </switch>
@@ -99,6 +99,9 @@
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="YtE-3P-9qY">
                                                 <rect key="frame" x="277" y="0.0" width="94" height="32"/>
+                                                <connections>
+                                                    <action selector="firstNumStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="OaZ-ed-2IR"/>
+                                                </connections>
                                             </stepper>
                                         </subviews>
                                         <constraints>
@@ -122,6 +125,9 @@
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="QQT-iW-Egw" userLabel="Second Num Stepper">
                                                 <rect key="frame" x="277" y="0.0" width="94" height="32"/>
+                                                <connections>
+                                                    <action selector="secondNumStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="tpJ-r0-5dg"/>
+                                                </connections>
                                             </stepper>
                                         </subviews>
                                         <constraints>
@@ -230,7 +236,7 @@
                         <outlet property="headerLBL" destination="ILh-gk-lEA" id="co1-c6-Pon"/>
                         <outlet property="manipulateStrings" destination="lil-Cw-iwz" id="lxP-Sr-y4n"/>
                         <outlet property="messageTV" destination="tTo-hP-g5Q" id="dlh-mm-Onw"/>
-                        <outlet property="numberSWCH" destination="dj9-tv-Jvi" id="wfa-yL-AgO"/>
+                        <outlet property="numberSWCH" destination="dj9-tv-Jvi" id="HMY-8I-bzi"/>
                         <outlet property="onReset" destination="veK-HX-roY" id="DbD-FD-s6b"/>
                         <outlet property="secondNumLBL" destination="byO-s4-aRm" id="fm2-pQ-Gc6"/>
                         <outlet property="secondNumStepper" destination="QQT-iW-Egw" id="yGr-Fv-sIz"/>
@@ -240,6 +246,10 @@
                         <outletCollection property="optionsSWCH" destination="XtI-5B-xXM" collectionClass="NSMutableArray" id="QUI-ka-4Vj"/>
                         <outletCollection property="optionSWCH" destination="dj9-tv-Jvi" collectionClass="NSMutableArray" id="tui-sE-NDa"/>
                         <outletCollection property="optionSWCH" destination="XtI-5B-xXM" collectionClass="NSMutableArray" id="eHq-Ny-bk5"/>
+                        <outletCollection property="numbersStepper" destination="YtE-3P-9qY" collectionClass="NSMutableArray" id="y3s-mm-qzi"/>
+                        <outletCollection property="numbersStepper" destination="QQT-iW-Egw" collectionClass="NSMutableArray" id="m1W-vp-zuF"/>
+                        <outletCollection property="stringAndPatternBTN" destination="q4e-FF-bwc" collectionClass="NSMutableArray" id="Ru2-o6-cBo"/>
+                        <outletCollection property="stringAndPatternBTN" destination="lil-Cw-iwz" collectionClass="NSMutableArray" id="85z-ix-90X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

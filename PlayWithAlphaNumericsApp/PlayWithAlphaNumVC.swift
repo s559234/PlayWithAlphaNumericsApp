@@ -20,7 +20,7 @@ class PlayWithAlphaNumVC: UIViewController {
     
     
     
-    @IBAction func numberSWCH(_ sender: Any) {
+    @IBAction func numberSWCH(_ sender: UISwitch) {
         self.numbersStepper[0].isEnabled = true
         self.numbersStepper[1].isEnabled = true
         stringAndPatternBTN[0].isEnabled=true
@@ -28,16 +28,19 @@ class PlayWithAlphaNumVC: UIViewController {
         self.optionSWCH[1].isOn=false
     }
     
-    @IBOutlet var optionSWCH: [UISwitch]!
     
+    @IBOutlet var optionSWCH: [UISwitch]!
     
     
     @IBAction func firstNumStepper(_ sender: UIStepper) {
         
     }
+        
     
-    @IBAction func secondnumStepper(_ sender: UIStepper) {
+    @IBAction func secondNumStepper(_ sender: UIStepper) {
     }
+    
+    
     
     @IBOutlet var numbersStepper: [UIStepper]!
     
@@ -48,15 +51,14 @@ class PlayWithAlphaNumVC: UIViewController {
     
 
     @IBAction func generatePatterns(_ sender: UIButton) {
+        
     }
-    
-
     
     @IBAction func manipulateStrings(_ sender: UIButton) {
     }
     
-    
     @IBOutlet var stringAndPatternBTN: [UIButton]!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,11 +88,4 @@ class PlayWithAlphaNumVC: UIViewController {
         stringAndPatternBTN[1].isEnabled=true
         self.optionSWCH[1].isOn=true
     }
-    
-
-    @IBAction func generatePattern(_ sender: UIButton) {
-        
-    }
-    
-   
 }
