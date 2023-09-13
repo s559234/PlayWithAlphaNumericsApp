@@ -45,8 +45,7 @@
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dj9-tv-Jvi">
                                                                 <rect key="frame" x="0.0" y="0.0" width="47" height="31"/>
                                                                 <connections>
-                                                                    <action selector="numberSWCH:" destination="BYZ-38-t0r" eventType="valueChanged" id="Dp2-yj-h0z"/>
-                                                                    <action selector="numberswitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="hVc-Zo-gnC"/>
+                                                                    <action selector="numberSWCH:" destination="BYZ-38-t0r" eventType="valueChanged" id="UgR-CD-o1Y"/>
                                                                 </connections>
                                                             </switch>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Numbers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81Y-Sh-YR7">
@@ -63,7 +62,6 @@
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XtI-5B-xXM">
                                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
                                                                 <connections>
-                                                                    <action selector="stringSWCH:" destination="BYZ-38-t0r" eventType="valueChanged" id="l7m-ef-095"/>
                                                                     <action selector="stringswitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="fW4-EA-aGD"/>
                                                                 </connections>
                                                             </switch>
@@ -160,7 +158,7 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="generatePattern:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vha-W2-8xH"/>
+                                                    <action selector="generatePatterns:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nuM-Ue-ie1"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lil-Cw-iwz">
@@ -169,6 +167,9 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Manipulate strings" cornerStyle="capsule">
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="manipulateStrings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hyL-h9-Kvx"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -230,20 +231,11 @@
                     </view>
                     <connections>
                         <outlet property="firstNumLBL" destination="5tq-bx-cX3" id="WXN-GJ-3RU"/>
-                        <outlet property="firstNumStepper" destination="YtE-3P-9qY" id="PIv-W4-7g7"/>
                         <outlet property="firstStrTF" destination="cQl-sX-yNS" id="KsD-CG-yRS"/>
-                        <outlet property="generatePattern" destination="q4e-FF-bwc" id="lYy-Tf-0qN"/>
                         <outlet property="headerLBL" destination="ILh-gk-lEA" id="co1-c6-Pon"/>
-                        <outlet property="manipulateStrings" destination="lil-Cw-iwz" id="lxP-Sr-y4n"/>
                         <outlet property="messageTV" destination="tTo-hP-g5Q" id="dlh-mm-Onw"/>
-                        <outlet property="numberSWCH" destination="dj9-tv-Jvi" id="HMY-8I-bzi"/>
-                        <outlet property="onReset" destination="veK-HX-roY" id="DbD-FD-s6b"/>
                         <outlet property="secondNumLBL" destination="byO-s4-aRm" id="fm2-pQ-Gc6"/>
-                        <outlet property="secondNumStepper" destination="QQT-iW-Egw" id="yGr-Fv-sIz"/>
                         <outlet property="secondStrTF" destination="92g-1b-eXf" id="8nG-PW-gtC"/>
-                        <outlet property="stringSWCH" destination="XtI-5B-xXM" id="w4M-q1-bbz"/>
-                        <outletCollection property="optionsSWCH" destination="dj9-tv-Jvi" collectionClass="NSMutableArray" id="s6L-fW-5DE"/>
-                        <outletCollection property="optionsSWCH" destination="XtI-5B-xXM" collectionClass="NSMutableArray" id="QUI-ka-4Vj"/>
                         <outletCollection property="optionSWCH" destination="dj9-tv-Jvi" collectionClass="NSMutableArray" id="tui-sE-NDa"/>
                         <outletCollection property="optionSWCH" destination="XtI-5B-xXM" collectionClass="NSMutableArray" id="eHq-Ny-bk5"/>
                         <outletCollection property="numbersStepper" destination="YtE-3P-9qY" collectionClass="NSMutableArray" id="y3s-mm-qzi"/>

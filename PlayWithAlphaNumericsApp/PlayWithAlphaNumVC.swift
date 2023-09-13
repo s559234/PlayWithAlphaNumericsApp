@@ -26,12 +26,14 @@ class PlayWithAlphaNumVC: UIViewController {
         stringAndPatternBTN[0].isEnabled=true
         stringAndPatternBTN[1].isEnabled=false
         self.optionSWCH[1].isOn=false
+        self.optionSWCH[0].isOn=true
+        
     }
     
     
     @IBOutlet var optionSWCH: [UISwitch]!
     
-    
+
     @IBAction func firstNumStepper(_ sender: UIStepper) {
         
     }
@@ -51,9 +53,9 @@ class PlayWithAlphaNumVC: UIViewController {
     
 
     @IBAction func generatePatterns(_ sender: UIButton) {
-        
-    }
     
+    }
+
     @IBAction func manipulateStrings(_ sender: UIButton) {
     }
     
@@ -87,5 +89,7 @@ class PlayWithAlphaNumVC: UIViewController {
         stringAndPatternBTN[0].isEnabled=false
         stringAndPatternBTN[1].isEnabled=true
         self.optionSWCH[1].isOn=true
+        self.optionSWCH[0].isOn=false
+        
     }
 }
