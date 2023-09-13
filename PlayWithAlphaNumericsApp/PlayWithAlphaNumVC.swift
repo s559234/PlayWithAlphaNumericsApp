@@ -56,11 +56,11 @@ class PlayWithAlphaNumVC: UIViewController {
     }
     
     @IBAction func numberSWCH(_ sender: UISwitch){
-        
         firstNumStepper.isEnabled=true
         secondNumStepper.isEnabled=true
         generatePattern.isEnabled=true
     }
+    
     
     @IBAction func stringSWCH(_ sender: UISwitch){
         
